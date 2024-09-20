@@ -1,2 +1,4 @@
+import { SkillIcon as IconComponent } from "pf-skills";
+
 export { default as Skills } from "./components/Skills";
-export { default as SkillIcon } from "./components/SkillIcon";
+export const SkillIcon = IconComponent;
