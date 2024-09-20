@@ -11,7 +11,7 @@
     "allowImportingTsExtensions": true,
     "isolatedModules": true,
     "moduleDetection": "force",
-    "noEmit": true,
+    // "noEmit": true,
     "jsx": "react-jsx",
 
     /* Linting */
@@ -25,6 +25,6 @@
     "emitDeclarationOnly": true, 
     "outDir": "dist" 
   },
-  "include": ["src"],
+  "include": ["src", "../svg_variable.cjs"],
   "exclude": ["node_modules", "dist"]
 }

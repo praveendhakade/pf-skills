@@ -1,0 +1,129 @@
+@import "./theme.scss";
+@import "./svg_icons";
+@import "./colors";
+
+.icon-wrapper {
+    position: relative;
+    display: inline-block;
+  }
+  
+  
+  .popup {
+    position: absolute;
+    top: -10px; 
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.7); 
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    white-space: nowrap;
+    pointer-events: none; 
+  }
+  
+
+.icon {
+    width: 50px;
+    height: 50px;
+
+    &.small {
+        width: 50px;
+        height: 50px;
+    }
+    &.medium {
+        width: 75px;
+        height: 75px;
+    }
+    &.large {
+        width: 100px;
+        height: 100px;
+    }
+
+    &.react {
+        @include svg-background($react-icon, contain);
+    }
+    &.python {
+        @include svg-background($python-icon, contain);
+    }
+    &.css3 {
+        @include svg-background($css3-icon, contain);
+    }
+    &.html5 {
+        @include svg-background($html5-icon, contain);
+    }
+    &.java {
+        @include svg-background($java-icon, contain);
+    }
+    &.materialui {
+        @include svg-background($materialui-icon, contain);
+    }
+    &.mongodb {
+        @include svg-background($mongodb-icon, contain);
+    }
+    &.nextjs {
+        @include svg-background($nextjs-icon, contain);
+        background-position-y: center;
+    }
+    &.nodejs {
+        @include svg-background($nodejs-icon, contain);
+    }
+    &.tailwind {
+        @include svg-background($tailwind-icon, contain);
+    }
+    &.typescript {
+        @include svg-background($typescript-icon, contain);
+    }
+    &.redux {
+        @include svg-background($redux-icon, contain);
+    }
+    &.express {
+        @include svg-background($express-icon, contain);
+        background-position-y: bottom;
+    }
+    &.sass {
+        @include svg-background($sass-icon, contain);
+    }
+    &.javascript {
+        @include svg-background($javascript-icon, contain);
+    }
+    &.mysql {
+        @include svg-background($mysql-icon, contain);
+    }
+
+    &.csharp {
+        @include svg-background($csharp-icon, contain);
+    }
+    &.reactnative {
+        // background-color: #000;
+        // border: 1px solid #000;
+        @include svg-background($reactnative-icon, contain);
+
+    }
+    &.reactnative:hover {
+
+        animation: rotateAnimation .3s  1 linear;
+    }       
+    &.reacthookform {
+        @include svg-background($reacthookform-icon, contain);
+    }
+    &.dotnet {
+
+        @include svg-background($dotnet-icon, contain);
+    }
+
+    transition: transform 0.3s ease;
+    &:hover {
+        transform: scale(1.2);
+        z-index: 10;
+    }
+}
+
+@keyframes rotateAnimation {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg); 
+    }
+  }
