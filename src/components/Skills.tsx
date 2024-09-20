@@ -1,7 +1,7 @@
 import { SKILLS } from "../constants";
 import { SkillIconSize } from "../types/skill";
 import SkillIcon from "./SkillIcon";
-
+import "../assets/sass/style.scss";
 interface ISkills {
   iconSize?: SkillIconSize;
   iconWidth?: number | string;

@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { ISkill, SkillIconSize } from "../types/skill";
 import { getWidthOrHeight } from "../utils";
-
+import "../assets/sass/style.scss";
 interface ISkillIcon {
   name: ISkill;
   size?: SkillIconSize;
